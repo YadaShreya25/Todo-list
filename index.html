@@ -4,10 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="todo.css">
 </head>
 <body>
-    <p>Todo list</p>
-    <p>First commit</p>
-    <p>dfgh</p>
+   <div class="container">
+    <div class="todo">
+        <h2>To-Do List <img src="/img1.webp" alt="todo"></h2>
+        <div class="info">
+            <input type="text" id="input-box" placeholder="Type here" >
+            <button onclick="addTask()"><i class="fa-solid fa-square-plus fa-2xl"></i></button>
+        </div>
+        <ul id="list-container">
+            <!--<li class="checked">Task 1</li>
+            <li>Task 2</li>
+            <li>Task 3</li>
+            <li>Task 4</li>-->
+        </ul>
+    </div>
+   </div>
+
+   <script src="todo.js"></script>
 </body>
 </html>
